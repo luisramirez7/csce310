@@ -11,8 +11,6 @@ int louiesQuickSelect( vector<int> number , int position, int comparisons ){
 	vector<int>righthandside;
 	
 	int pivot = number[0];
-	
-	// cout << "PIVOT: " << pivot << endl;
 
 	for (int i = 0; i < number.size(); ++i)
 	{
