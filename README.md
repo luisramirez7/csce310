@@ -1,6 +1,8 @@
 # csce310
 A repository to keep track of very useful algorithm implementations as I go through algorithms class. 
 
+# WARNING: OPTIMAL BINARY SEARCH TREE IS NOT FUNCTIONAL
+
 Here are some guidlines to help you compile, and run these algorithms on your local machine. 
 
 1. `git clone` the repository
