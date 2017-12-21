@@ -1,0 +1,95 @@
+\documentclass[addpoints,letter,11pt]{exam}
+
+% \noaddpoints % if you don't want to count the points
+% Specifies the way question are displayed:
+\qformat{\textbf{Question~\thequestion}\quad(\thepoints)\hfill}
+\usepackage{color} % defines a new color
+\definecolor{SolutionColor}{rgb}{0.8,0.9,1} % light blue
+\shadedsolutions % defines the style of the solution environment
+% \framedsolutions % defines the style of the solution environment
+% Defines the title of the solution environment:
+\renewcommand{\solutiontitle}{\noindent\textbf{Solution:}\par\noindent}
+
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\definecolor{unlred}{RGB}{245,0,47}
+\usepackage[colorlinks=true,linkcolor=unlred]{hyperref}
+
+\title{Homework $05$ (Due: Monday, November $27, 2017, 11:59:00$PM (Central Time)}
+\author{CSCE $310$}
+\date{}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\begin{document}
+\maketitle
+
+\section*{Instructions}
+This assignment consists of $5$ analytical problems and $2$ programming problems. Your solutions to the analytical problems must be submitted, as one PDF, via webhandin. While handwritten (then scanned) solutions to the analytical problems are acceptable, you are strongly encouraged to typeset your solutions in \LaTeX{} or a word processor with an equation editor. The legibility of your solutions is of great importance.
+
+\subsection*{Programming Assignment}
+Your methods will be tested on the \verb+cse.unl.edu+ server, using\\
+\verb!4.8.1 20130909 [gcc-4_8-branch revision 202388] (SUSE Linux)!. To ensure proper execution, you should test your submission in the \href{http://cse.unl.edu/~cse310/grade}{\color{unlred}webgrader}
+
+You will submit \verb+OurCSCE310Tree.h+ and \verb+OurCSCE310Tree.cpp+, along with your PDF, via webhandin.
+
+\subsubsection*{\texttt{rotateLeft}}
+\verb+rotateLeft+ is a function that will rotate a \verb+OurCSCE310Tree+ to the left.
+
+\subsubsection*{\texttt{rotateRight}}
+\verb+rotateRight+ is a function that will rotate a \verb+OurCSCE310Tree+ to the right.
+
+\subsubsection*{\texttt{deleteNode} ($15$ Points Extra Credit or Honors Contract)}
+\verb+deleteNode+ is a function that will receive a number and (if it exists in the \verb+OurCSCE310Tree+) delete it.
+
+\subsubsection*{General Guidelines}
+Sample header, source, and testing files have been provided. You may modify the \verb+.h+ and \verb+.cpp+ files as needed, but you will only be turning in the four files mentioned above. The webgrader will be compiling the code with the command \verb|g++ -o /path/to/executable.out /path/to/source/files/*.cpp| for each pt, but I will only be copying \verb+OurCSCE310Tree.h+ and \verb+OurCSCE310Tree.cpp+ out of your submission and into separate directories for Part $1$ and Part $2$. You may assume that only positive values will be placed into the \verb+OurCSCE310Tree+.
+
+\subsection*{Written Assignment}
+\begin{questions}
+  \question[10]
+  Question $11.2.10$, Parts $b$ through $e$, in \emph{The Design and Analysis of Algorithms}
+  \question[10]
+  From \emph{Introduction to Algorithms ISBN:978-0-262-03293-3}
+  You are given a a sequence of elements to sort. The input sequence consists of $\frac{n}{k}$ subsequences, each containing $k$ elements. The elements in a given subsequence are all smaller than the elements in the succeeding subsequence and larger than the elements in the preceeding subsequences. Thus, all that is needed to sort the whole sequence of length $n$ is to sort the $k$ elements in each of the $\frac{n}{k}$ subsequences. Show an $\Omega\left(n\log k\right)$ lower bound on the number of comparisons needed to solve this variant of the sorting problem. \emph{(Hint: It is not rigorous to simply combine the lower bounds for the individual subsequences.)}
+  \question[10]
+  Question $11.3.2$ in \emph{The Design and Analysis of Algorithms}
+  \question[10]
+  Question $11.3.6$ in \emph{The Design and Analysis of Algorithms}
+  \question[10]
+  Question $11.3.11$ in \emph{The Design and Analysis of Algorithms}
+\end{questions}
+
+%\section*{webgrader Notes}
+%The webgrader should take roughly $60$ seconds to complete running.
+
+\section*{Point Allocation}
+\begin{table}[H]
+  \center
+  \begin{tabular}{|l|r|}
+    \hline
+    Question & Points\\
+    \hline
+    \hline
+    Question $1$ & $10$\\
+    Question $2$ & $10$\\
+    Question $3$ & $10$\\
+    Question $4$ & $10$\\
+    Question $5$ & $10$\\
+    \hline
+    \verb+rotateLeft+ & \\
+    Test Cases & $1\times 15$\\
+    Compilation & $10$\\
+    \verb+rotateLeft+ Total & $25$\\
+    \verb+rotateRight+ & \\
+    Test Cases & $1\times 15$\\
+    Compilation & $10$\\
+    \verb+rotateRight+ Total & $25$\\
+    \hline
+    \hline
+    Total & $100$\\
+    \hline
+  \end{tabular}
+\end{table}
+
+\end{document}
