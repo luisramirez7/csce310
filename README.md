@@ -1,8 +1,6 @@
 # csce310
 A repository to keep track of very useful algorithm implementations as I go through algorithms class. 
 
-# WARNING: MINIMUM SPANNING TREE IS NOT FUNCTIONAL
-
 Here are some guidlines to help you compile, and run these algorithms on your local machine. 
 
 1. `git clone` the repository
@@ -13,3 +11,5 @@ Here are some guidlines to help you compile, and run these algorithms on your lo
   - For files that have `.in` files, execute like so: `$ ./part01 < part01test01.in`, as an example. The `.in` file simply holds test information to test your algo. 
   - For files that have no `.in` files, simply run your program. I highly recommend (if one is not present) to create your own testing values, based off the test.cpp's, simply because this is your main program, and will be easier to provide the program with a plain text file of inputs. 
 6. That's all! Become an algorithm master following these programs to practice your ability!
+
+latest update: minimum spanning tree implementation now functional
